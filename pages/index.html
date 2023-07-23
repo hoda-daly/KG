@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidKinder</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="../path/to/flowbite/dist/flowbite.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+    
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center">
+          <img src="../imgs/bears.png" class="h-8 mr-3" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">kidkindder</span>
+      </a>
+      <div class="flex md:order-2">
+        <button type="button" class="text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li >
+            <a href="#"   class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+    
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">about</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">classess</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">teachers</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">gallery</a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">pages <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">blog grid</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">blog details</a>
+                  </li>
+                </ul>
+            </div>
+        </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">contact</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+ </header>
+    <main>
+        <section>
+        <div class="container">
+            <div class="left-side">
+                <span>Kids Learning Center</span>
+                <h1>New Approach to Kids Education</h1>
+                <p>Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit. <br>
+                     Ipsum dolor no justo dolor et,lorem ut dolor erat dolore sed ipsum at ipsum nonumy amet. <br>
+                     Clita lorem dolore sed stet et est justo dolore.</p>
+                     <button>learn more</button>
+            </div>
+            <div class="right-side">
+                <img src="../imgs/header (1).png" alt="">
+            </div>
+        </div>
+      </section>
+
+        <div class="container2">
+            
+        <div class="cards">
+            <div class="card">
+            <div class="icon">
+            <i class="fa-solid fa-xmarks-lines"></i></div>
+            <div class="content">
+            <h2>Play Ground</h2>
+            <p>Lorem ipsum dolor sit amet consectetur . <br>
+                 Ea velit veniam corrupti molestiae <br>
+                 Amet illo mollitia in sint dolore....</p></div>
+        </div>
+        <div class="card">
+            <div class="icon">
+            <i class="fa-solid fa-drum"></i></div>
+            <div class="content">
+            <h2>music and dance</h2>
+            <p>Lorem ipsum dolor sit amet consectetur  <br>
+                 Ea velit veniam corrupti molestiae <br>
+                 Amet illo mollitia in sint dolore....</p></div>
+        </div>
+        <div class="card">
+            <div class="icon">
+            <i class="fa-regular fa-newspaper"></i></div>
+            <div class="content">
+            <h2>sarts and crafts</h2>
+            <p>Lorem ipsum dolor sit amet consectetur  <br>
+                 Ea velit veniam corrupti molestiae<br>
+                 Amet illo mollitia in sint dolore....</p></div>
+        </div>
+        <div class="card">
+            <div class="icon">
+            <i class="fa-solid fa-car"></i></div>
+            <div class="content">
+            <h2>safe transposition</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                 Ea velit veniam corrupti molestiae quos dolores eos provident?<br>
+                 Amet illo mollitia in sint dolore, natus eos pariatur nobis....</p></div>
+        </div>
+        <div class="card">
+            <div class="icon">
+            <i class="fa-solid fa-bread-slice"></i>
+            </div>
+            <div class="content">
+            <h2>healthy food</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                 Ea velit veniam corrupti molestiae quos dolores eos provident?<br>
+                 Amet illo mollitia in sint dolore, natus eos pariatur nobis....</p></div>
+        </div>
+        <div class="card">
+            <div class="icon">
+            <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="content">
+                <h2>education tour</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                     Ea velit veniam corrupti molestiae quos dolores eos provident?<br>
+                     Amet illo mollitia in sint dolore, natus eos pariatur nobis....</p>
+            </div>
+       
+        </div>
+
+         </div>
+        </div>
+        
+        <div class="container3">
+            <div class="img">
+                <img src="../imgs/about-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="left-border">LEARN ABOUT US <div></div></div>
+                <h1>Best School For Your Kids</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  <br>
+                    Totam voluptates voluptatem et. Optio, voluptate. <br>
+                     Necessitatibus veniam deleniti debitis possimus ex quis quisquam ipsam magni, <br>
+                     eligendi nesciunt perspiciatis vero quam voluptates!</p>
+                     <div class="content2">
+                        <img src="../imgs/about-2.jpg" alt="">
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Labore eos amet dolor amet diam</p>
+                            </div>
+                            <div class="icon">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Labore eos amet dolor amet diam</p></div>
+                            <div class="icon">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Labore eos amet dolor amet diam</p></div>
+                        </div>
+                     </div>
+                     <button class="btn1">learn more</button>
+
+            </div>
+        </div>
+
+        <div class="container4">
+          <div class="contant2">
+            <div class="up-line1"></div>
+            <div><p>POPULAR CLASSES</p></div>
+          <div class="up-line1"></div>
+        </div>
+          <h2>Classes for Your Kids</h2>
+          <div class="cards2">
+          <div class="card2">
+            <img src="../imgs/class-1.jpg" alt="">
+            <h3>Drawing class</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis itaque doloremque cumque, dolores dolorum accusantium vel obcaecati mollitia</p>
+            <div  class="up-line"></div>
+            <table>
+              
+              <tbody>
+               
+                  <tr>
+                    <th>age of kids</th>
+                    <td>3-6years</td>
+                  </tr>
+                 <tr>
+                  <th>total seats</th>
+                  <td>40 seats</td>
+                 </tr>
+                 <tr>
+                <th>class time</th>
+                <td>08:00-10:00</td>
+                 </tr>
+                 <tr>
+                <th>tution fee</th>
+                <td>$290/Mpnth</td>
+                 </tr>
+                
+              </tbody>
+            </table>
+            <button   type="submit" class="btn2">jion now</button>
+          </div>
+           <!-- card 2 -->
+           <div class="card2">
+            <img src="../imgs/class-2.jpg" alt="">
+            <h3>Drawing class</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis itaque doloremque cumque, dolores dolorum accusantium vel obcaecati mollitia</p>
+            <div  class="up-line"></div>
+            <table>
+              
+              <tbody>
+                <tr>
+                  <tr>
+                    <th>age of kids</th>
+                    <td>3-6years</td>
+                  </tr>
+                 <tr>
+                  <th>total seats</th>
+                  <td>40 seats</td>
+                 </tr>
+                 <tr>
+                <th>class time</th>
+                <td>08:00-10:00</td>
+                 </tr>
+                 <tr>
+                <th>tution fee</th>
+                <td>$290/Mpnth</td>
+                 </tr>
+                </tr>
+              </tbody>
+            </table>
+            <button   type="submit" class="btn2">jion now</button>
+          </div>
+          <!-- card2 -->
+          <div class="card2">
+            <img src="../imgs/class-1.jpg" alt="">
+            <h3>Drawing class</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis itaque doloremque cumque, dolores dolorum accusantium vel obcaecati mollitia</p>
+            <div class="up-line"></div>
+            <table>
+              
+              <tbody>
+                <tr>
+                  <tr>
+                    <th>age of kids</th>
+                    <td>3-6years</td>
+                  </tr>
+                 <tr>
+                  <th>total seats</th>
+                  <td>40 seats</td>
+                 </tr>
+                 <tr>
+                <th>class time</th>
+                <td>08:00-10:00</td>
+                 </tr>
+                 <tr>
+                <th>tution fee</th>
+                <td>$290/Mpnth</td>
+                 </tr>
+                </tr>
+              </tbody>
+            </table>
+            <button   type="submit" class="btn2">jion now</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="container5">
+          <div class="left-side5">
+            <div class="left-line">
+              <p>book a seat</p>
+              <div></div>
+            </div>
+            <h1>Book A Seat For Your Kid</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Tenetur beatae fugiat, magnam veniam explicabo odio. <br>
+                Cumque hic ipsam id fugiat aliquid vitae accusamus 
+                debitis dolore quibusdam eveniet sunt, voluptates quod.</p>
+
+                <div class="icons">
+                  <div class="icon">
+                      <i class="fa-solid fa-check"></i>
+                      <p>Labore eos amet dolor amet diam</p>
+                  </div>
+                  <div class="icon">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Labore eos amet dolor amet diam</p></div>
+                  <div class="icon">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Labore eos amet dolor amet diam</p></div>
+              </div>
+              <button class="btn5">book now</button>
+
+           </div>
+           <div class="right-side5">
+            <h1>book a seat</h1>
+
+            <form action="">
+              <input type="text" placeholder="Your Name">
+              <input type="text" placeholder="Your Email">
+              <input type="number" placeholder="Select A Class">
+            <button class="btn5-2">book now</button>
+
+            </form>
+
+          </div>
+          </div>
+         
+
+         
+          <div class="teachers">
+            <div class="contant2">
+              <div class="up-line1"></div>
+              <div><span>OUR TEACHERS</span></div>
+              
+            <div class="up-line1"></div>
+          </div>
+          <p>Meet Our Teachers</p>
+
+            <div class="cards3">
+             
+              <div class="card3">
+
+               <img src="../imgs/team-1.jpg" alt="">
+                <h1>juli smith</h1>
+                <h2>music teacher</h2>
+              </div>
+              <div class="card3">
+                <img src="../imgs/team-2.jpg" alt="">
+                <h1>juli smith</h1>
+                <h2>music teacher</h2>
+              </div>
+              <div class="card3">
+                <img src="../imgs/team-3.jpg" alt="">
+                <h1>juli smith</h1>
+                <h2>music teacher</h2>
+              </div>
+              <div class="card3">
+                <img src="../imgs/team-4.jpg" alt="">
+                <h1>juli smith</h1>
+                <h2>music teacher</h2>
+              </div>
+            </div>
+          </div>
+
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer1">
+          <div class="div1.1">
+          <a href="#" class="flex items-center">
+            <img src="../imgs/bears.png" class="h-8 mr-3" alt="Flowbite Logo" />
+            <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white" style="color: aliceblue;">kidkindder</span>
+        </a>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+          Vitae aperiam nulla dicta quas asperiores at eius debitis, <br>
+           sit voluptatibus nemo placeat magnam saepe, quidem, <br>
+            facere natus illum velit in. Reprehenderit!</p>
+            <div class="icon-footer">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+            <div class="footer2">
+              <h1>get in touch</h1>
+              <div class="div1">
+                <i class="fa-solid fa-location-dot"></i> <span>Address</span>
+                <p>123 streat, newyork usa</p>
+                <i class="fa-regular fa-envelope"></i><span>email</span>
+                <p>info@example.com</p>
+                <i class="fa-solid fa-phone"></i><span>phone</span>
+                <p>+2054864532120</p>
+
+              </div>
+            </div>
+
+        <div class="footer3">
+          <h1>quick links</h1>
+          <i class="fa-solid fa-angle-right"></i> <span>home</span> <br>
+          <i class="fa-solid fa-angle-right"></i> <span>about</span> <br>
+          <i class="fa-solid fa-angle-right"></i> <span> our classess</span><br>
+          <i class="fa-solid fa-angle-right"></i> <span> our teachers</span><br>
+          <i class="fa-solid fa-angle-right"></i> <span>our blogs</span><br>
+          <i class="fa-solid fa-angle-right"></i> <span>contact</span>
+          
+        </div>
+        <div class="footer4">
+          <h1>newsletter</h1>
+          <input type="text" name="" id="" placeholder="Your Name">
+          <input type="text" name="" id="" placeholder="Your Email">
+          <button>submit</button>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="footer5" >
+        <p>©  <span>Your Site Name.</span>   All Rights Reserved. Designed by   <span>HTML Codex</span>  <br>
+          Distributed By:  <span>ThemeWagon</span>  </p>
+      </div>
+    </footer>
+
+</body>
+</html>
